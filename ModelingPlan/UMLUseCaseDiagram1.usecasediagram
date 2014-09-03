@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ec284582-46e5-49a2-9c27-9229e42946f8" name="UMLUseCaseDiagram1" linkedPackageId="ba2a8f2f-b6e4-4b5b-8dab-6a8bad06a748" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="27418d83-ca2c-4ea7-9fb0-d9f3780a43c8">
+      <profileInstance Id="1c38e6a2-7edc-4075-b8c7-0a337ef89764" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2f37f258-4f33-40b6-acd2-eb7b598cecce">
+      <profileInstance Id="f65ab9f1-9e95-4a35-8654-be5476d80e1d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="bbf48828-94fb-4bfc-a6cb-303ea0505b15" name="العميل" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="534e33a5-959e-47b8-abcc-9fab4e506ed5" />
+        <suppliersInternal>
+          <dependency Id="71edec58-267c-4e00-91c2-2f40da059925">
+            <useCaseMoniker Id="8a95d493-9924-43c5-bd04-1972edb9643c" LastKnownName="تسجيل دخول" />
+            <elementDefinition Id="3d5267b7-a6c1-449e-b626-af919cd59815" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a95d493-9924-43c5-bd04-1972edb9643c" name="تسجيل دخول" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f27f95cb-a14c-419e-9877-0284b76be904" />
+        <targetEnds>
+          <association Id="4241d7f4-20df-4339-8d9f-8ed227b8e7a7" isDerived="false" sourceEndRoleName="تسجيل دخول" targetEndRoleName="الارسال" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8d4a5a84-52c5-40a1-bf63-413202c53db6" LastKnownName="الارسال" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5df4b20b-404f-4937-ad31-55ccac55c555" name="تسجيل دخول" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3d3de36e-8639-4890-ab50-b716a4cbfae4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47e336cd-2f7d-4c5f-9c79-9ccf8b402005" name="الارسال" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="494c8187-951a-4236-adcc-d35ef30220b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16ba4d95-2818-4390-9fa3-5476ca57af41" />
+          </association>
+          <association Id="14a26d26-6957-4c5e-8c43-7a9dcceabcd6" isDerived="false" sourceEndRoleName="تسجيل دخول" targetEndRoleName="تقرير" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="828fd982-4172-4df8-9ba5-f2362e068e8c" LastKnownName="تقرير" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2077de8-61ab-4301-9c7f-56d9541e29be" name="تسجيل دخول" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c238ba32-f05a-46f1-a378-31c997615c0d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0de00bf-a2f8-47de-9c4e-dbc54acc26fd" name="تقرير" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af1d3e74-2fd3-4319-afe9-38a2e1179ed8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c133c23a-1c1d-497c-96cd-896c7ade31ef" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8d4a5a84-52c5-40a1-bf63-413202c53db6" name="الارسال" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f050d93-cdd4-4175-95b5-7358051a0010" />
+        <suppliersInternal>
+          <dependency Id="68bbb7d6-f582-4f51-889f-8e81ce88d1de">
+            <useCaseMoniker Id="eac3ddfb-8937-4a7e-90a6-2e173bf51476" LastKnownName="تسجيل خروج" />
+            <elementDefinition Id="2628f300-dff0-4ef5-aa59-697fb38e47c1" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="828fd982-4172-4df8-9ba5-f2362e068e8c" name="تقرير" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5429f9cc-475f-48f6-885e-4d1524d277f6" />
+        <suppliersInternal>
+          <dependency Id="0c90565e-8674-43a8-b1e6-29994e7bebee">
+            <useCaseMoniker Id="eac3ddfb-8937-4a7e-90a6-2e173bf51476" LastKnownName="تسجيل خروج" />
+            <elementDefinition Id="11e0493d-bb58-4ce1-9688-47a11ff332a7" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="eac3ddfb-8937-4a7e-90a6-2e173bf51476" name="تسجيل خروج" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e39b325-a31d-4ba0-8e60-6e88e6cbf4ae" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ba2a8f2f-b6e4-4b5b-8dab-6a8bad06a748" name="ModelingPlan">
+    <elementDefinition Id="697b3f17-079d-4c1b-bd04-02603a5f1ee5" />
+  </package>
+</useCaseModelRoot>

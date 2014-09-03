@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="697b3f17-079d-4c1b-bd04-02603a5f1ee5"
+  name="ModelingPlan" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="97838c2e-c8ba-4a0a-818b-1d220f01fd70">
+      <body>الصلاحية
+هل اسم المستخدم او كلمة المرور فارغا</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="2d6612f5-6863-4fe1-b239-dfef6d5609c6"
+          LastKnownName="هل البيانات صالحة"
+          LastKnownLocation="ModelingPlan.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="ad8939c0-4a09-4458-82ba-76db97b8abba" />
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="534e33a5-959e-47b8-abcc-9fab4e506ed5"
+        name="العميل"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="3d5267b7-a6c1-449e-b626-af919cd59815">
+            <useCaseMoniker
+              Id="f27f95cb-a14c-419e-9877-0284b76be904"
+              LastKnownName="تسجيل دخول"
+              LastKnownLocation="ModelingPlan.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f27f95cb-a14c-419e-9877-0284b76be904"
+        name="تسجيل دخول"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="16ba4d95-2818-4390-9fa3-5476ca57af41"
+            isDerived="false"
+            sourceEndRoleName="تسجيل دخول"
+            targetEndRoleName="الارسال"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2f050d93-cdd4-4175-95b5-7358051a0010"
+              LastKnownName="الارسال"
+              LastKnownLocation="ModelingPlan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d3de36e-8639-4890-ab50-b716a4cbfae4"
+                  name="تسجيل دخول"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="494c8187-951a-4236-adcc-d35ef30220b5"
+                  name="الارسال"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c133c23a-1c1d-497c-96cd-896c7ade31ef"
+            isDerived="false"
+            sourceEndRoleName="تسجيل دخول"
+            targetEndRoleName="تقرير"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5429f9cc-475f-48f6-885e-4d1524d277f6"
+              LastKnownName="تقرير"
+              LastKnownLocation="ModelingPlan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c238ba32-f05a-46f1-a378-31c997615c0d"
+                  name="تسجيل دخول"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af1d3e74-2fd3-4319-afe9-38a2e1179ed8"
+                  name="تقرير"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2f050d93-cdd4-4175-95b5-7358051a0010"
+        name="الارسال"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2628f300-dff0-4ef5-aa59-697fb38e47c1">
+            <useCaseMoniker
+              Id="3e39b325-a31d-4ba0-8e60-6e88e6cbf4ae"
+              LastKnownName="تسجيل خروج"
+              LastKnownLocation="ModelingPlan.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5429f9cc-475f-48f6-885e-4d1524d277f6"
+        name="تقرير"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="11e0493d-bb58-4ce1-9688-47a11ff332a7">
+            <useCaseMoniker
+              Id="3e39b325-a31d-4ba0-8e60-6e88e6cbf4ae"
+              LastKnownName="تسجيل خروج"
+              LastKnownLocation="ModelingPlan.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3e39b325-a31d-4ba0-8e60-6e88e6cbf4ae"
+        name="تسجيل خروج"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a41c3b6-65a4-45c1-aa64-dec51c2016db"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="cfb6deaf-7d9e-41d0-a889-ef7ccc76a0b9"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fc26690c-322f-4584-bfcf-143138620f25"
+            name="بداية"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ab9f3ade-bbb2-4475-92c2-90653e72d32d"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="5bd017dd-6425-48da-89bc-3211fc36d895"
+                  LastKnownName="كلاس المستخدم"
+                  LastKnownLocation="ModelingPlan.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <objectNode
+            Id="5bd017dd-6425-48da-89bc-3211fc36d895"
+            name="كلاس المستخدم"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="b57caf4b-7a88-4c00-8d07-92726f99e5f5"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <decisionNodeMoniker
+                  Id="2d6612f5-6863-4fe1-b239-dfef6d5609c6"
+                  LastKnownName="هل البيانات صالحة"
+                  LastKnownLocation="ModelingPlan.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="089bbdc9-6d9b-4a5d-8474-5f19eee28905"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <callBehaviorAction
+            Id="b23d8785-71fa-4f4b-9d33-9ba0f30f9428"
+            name="تسجيل دخول"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81992b23-1cac-4c06-b4df-19e234e0b1aa"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="486a0813-2794-43a5-9bc0-9d0e32483aeb"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingPlan.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <decisionNode
+            Id="2d6612f5-6863-4fe1-b239-dfef6d5609c6"
+            name="هل البيانات صالحة"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7fb7dde9-930f-4a9d-a5cc-a83b51c2ce02"
+                name="البيانات صالحة"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="b23d8785-71fa-4f4b-9d33-9ba0f30f9428"
+                  LastKnownName="تسجيل دخول"
+                  LastKnownLocation="ModelingPlan.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="486a0813-2794-43a5-9bc0-9d0e32483aeb"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="080c8be3-968d-439d-ba46-9a576ebe4f8e"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_2031.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c92f00cf-cbbc-483c-bbcd-0045f995547b"
+        LastKnownName="BaseInfo"
+        LastKnownLocation="Package_2032.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7f693636-dcd5-4b24-980b-923c8bcd7857"
+        LastKnownName="Package2"
+        LastKnownLocation="Package_2100.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

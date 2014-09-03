@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="d8ebb1fe-525f-42d8-9280-27b68b8c2d77" name="Activity1" linkedPackageId="d4b89fc2-370e-4a9c-a022-3e557e5d6713" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="854c8eb3-9df7-4fe9-ad69-75d1519e4788">
+      <elementDefinition Id="97838c2e-c8ba-4a0a-818b-1d220f01fd70" />
+      <body>الصلاحية
+هل اسم المستخدم او كلمة المرور فارغا</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="6f34f97d-17af-4575-a23b-d7b1f76eae82" LastKnownName="هل البيانات صالحة" />
+      </annotatedElements>
+    </comment>
+    <comment Id="da442c72-bfef-4357-b69b-df51490c308b">
+      <elementDefinition Id="ad8939c0-4a09-4458-82ba-76db97b8abba" />
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c9b1459f-75be-4eb1-a565-354d6ad5303b">
+      <profileInstance Id="6491e15d-d363-4afb-8c21-a4868c2eea31" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2e428ad4-8f99-40d2-bf9b-4e5b07d934b4">
+      <profileInstance Id="cd91c1d7-481d-4c7e-900c-2acc83b487b5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="799e1de2-a117-497c-b9a6-b954621936f4" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="cfb6deaf-7d9e-41d0-a889-ef7ccc76a0b9" />
+        <nodes>
+          <initialNode Id="650a6dba-9df4-4afc-a045-c0cf09e773a6" name="بداية" isLeaf="false">
+            <elementDefinition Id="fc26690c-322f-4584-bfcf-143138620f25" />
+            <objectFlowTargets>
+              <objectFlow Id="06b34d57-079b-4ac8-b055-028897632227" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="295df1c6-34f3-4324-b436-cf61b3169cb7" LastKnownName="كلاس المستخدم" />
+                <elementDefinition Id="ab9f3ade-bbb2-4475-92c2-90653e72d32d" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <objectNode Id="295df1c6-34f3-4324-b436-cf61b3169cb7" name="كلاس المستخدم" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="5bd017dd-6425-48da-89bc-3211fc36d895" />
+            <objectFlowTargets>
+              <objectFlow Id="c6ff3797-68de-4afa-adad-bbf3793a5564" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <decisionNodeMoniker Id="6f34f97d-17af-4575-a23b-d7b1f76eae82" LastKnownName="هل البيانات صالحة" />
+                <elementDefinition Id="b57caf4b-7a88-4c00-8d07-92726f99e5f5" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="6b38f809-b703-4e48-9a0b-90fd3238fbe2" name="2147483647" value="2147483647">
+                <elementDefinition Id="089bbdc9-6d9b-4a5d-8474-5f19eee28905" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <callBehaviorAction Id="94fd6a56-e247-445b-a136-9ed76f6a5ed0" name="تسجيل دخول" isLeaf="false">
+            <elementDefinition Id="b23d8785-71fa-4f4b-9d33-9ba0f30f9428" />
+            <flowNodeTargets>
+              <controlFlow Id="edb0fe20-55bf-4ef8-a157-820016ec8df1" isLeaf="false">
+                <activityFinalNodeMoniker Id="8df67a8e-682c-4e17-85e1-138f3a46edb4" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="81992b23-1cac-4c06-b4df-19e234e0b1aa" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <decisionNode Id="6f34f97d-17af-4575-a23b-d7b1f76eae82" name="هل البيانات صالحة" isLeaf="false">
+            <elementDefinition Id="2d6612f5-6863-4fe1-b239-dfef6d5609c6" />
+            <flowNodeTargets>
+              <controlFlow Id="35f2f680-8d48-464f-9af2-a908fa41bf2a" name="البيانات صالحة" isLeaf="false">
+                <callBehaviorActionMoniker Id="94fd6a56-e247-445b-a136-9ed76f6a5ed0" LastKnownName="تسجيل دخول" />
+                <elementDefinition Id="7fb7dde9-930f-4a9d-a5cc-a83b51c2ce02" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="8df67a8e-682c-4e17-85e1-138f3a46edb4" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="486a0813-2794-43a5-9bc0-9d0e32483aeb" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="d4b89fc2-370e-4a9c-a022-3e557e5d6713" name="ModelingPlan">
+    <elementDefinition Id="697b3f17-079d-4c1b-bd04-02603a5f1ee5" />
+  </package>
+</activityRootModel>

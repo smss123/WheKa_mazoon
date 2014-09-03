@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="ec284582-46e5-49a2-9c27-9229e42946f8" />
+  <nestedChildShapes>
+    <actorShape Id="15bb5bce-9830-4fe4-9233-8f1ac9f4b0e6" absoluteBounds="0.75, 1.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="bbf48828-94fb-4bfc-a6cb-303ea0505b15" LastKnownName="العميل" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="8544609e-9454-432b-ae20-fdc54d1f7d97" absoluteBounds="1.75, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8a95d493-9924-43c5-bd04-1972edb9643c" LastKnownName="تسجيل دخول" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(1.25 : 1.5); (1.75 : 1.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="71edec58-267c-4e00-91c2-2f40da059925" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="15bb5bce-9830-4fe4-9233-8f1ac9f4b0e6" />
+        <useCaseShapeMoniker Id="8544609e-9454-432b-ae20-fdc54d1f7d97" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="0a8edc82-ce5a-4387-b7dd-12d683250105" absoluteBounds="5.125, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8d4a5a84-52c5-40a1-bf63-413202c53db6" LastKnownName="الارسال" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.72939905635419 : 1.42897791757716); (5.14560094364581 : 1.07102208242284)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4241d7f4-20df-4339-8d9f-8ed227b8e7a7" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="8544609e-9454-432b-ae20-fdc54d1f7d97" />
+        <useCaseShapeMoniker Id="0a8edc82-ce5a-4387-b7dd-12d683250105" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="0252256f-ca2a-4aef-9644-1824c7db5528" absoluteBounds="3.625, 4.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="828fd982-4172-4df8-9ba5-f2362e068e8c" LastKnownName="تقرير" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.40501029991546 : 1.73768245987037); (3.96998970008454 : 4.13731754012963)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="14a26d26-6957-4c5e-8c43-7a9dcceabcd6" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="8544609e-9454-432b-ae20-fdc54d1f7d97" />
+        <useCaseShapeMoniker Id="0252256f-ca2a-4aef-9644-1824c7db5528" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ef42032d-7d87-47cb-aaef-506ddda1ba04" absoluteBounds="9.625, 1.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="eac3ddfb-8937-4a7e-90a6-2e173bf51476" LastKnownName="تسجيل خروج" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(6.10675895481497 : 1.06691096594652); (9.64324104518503 : 1.55808903405348)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="68bbb7d6-f582-4f51-889f-8e81ce88d1de" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0a8edc82-ce5a-4387-b7dd-12d683250105" />
+        <useCaseShapeMoniker Id="ef42032d-7d87-47cb-aaef-506ddda1ba04" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseDependencyConnector edgePoints="[(4.49357707010037 : 4.20606884287066); (9.75642292989963 : 1.79393115712934)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="0c90565e-8674-43a8-b1e6-29994e7bebee" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0252256f-ca2a-4aef-9644-1824c7db5528" />
+        <useCaseShapeMoniker Id="ef42032d-7d87-47cb-aaef-506ddda1ba04" />
+      </nodes>
+    </useCaseDependencyConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
